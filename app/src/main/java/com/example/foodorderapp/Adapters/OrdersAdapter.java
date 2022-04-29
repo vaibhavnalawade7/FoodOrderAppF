@@ -70,6 +70,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.viewHolder
             price=itemView.findViewById(R.id.orderPrice);
 
         }
+        //Bug
     }
 
 

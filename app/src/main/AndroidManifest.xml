@@ -4,16 +4,25 @@
 
     <application
         android:allowBackup="true"
+        android:exported="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:exported="true"
-        android:testOnly="false"
         android:supportsRtl="true"
+        android:testOnly="false"
         android:theme="@style/Theme.FoodOrderApp">
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true">
 
+        </activity>
+        <activity
+            android:name=".OrdersActivity"
+            android:exported="true">
 
-        <activity android:name=".OrdersActivity"
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +35,9 @@
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/styles" />
-
-
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

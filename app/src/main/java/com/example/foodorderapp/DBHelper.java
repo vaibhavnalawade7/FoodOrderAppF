@@ -27,7 +27,7 @@ public class DBHelper extends SQLiteOpenHelper {
                         " phone text," +
                         " price integer," +
                         " image integer," +
-                        " quntity integer," +
+                        " quantity integer," +
                         "description text," +
                         "foodname text)"
 
